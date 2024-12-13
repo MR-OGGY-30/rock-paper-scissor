@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: scroll;
+    background-color: black;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    color: rgb(234, 136, 23);
+    background-color: rgb(19, 6, 120);
+    border-width: 2px 10px 2px 10px;
+    border-style: solid;
+    border-color: green;
+    margin: 0 auto 0 auto;
+}
+
+p {
+    color: white;
+}
+
+#fist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: rgb(0, 0, 0);
+    margin: 10px auto;
+    width: 90vw;
+}
+
+.fist-content {
+    height: 20vw;
+    width: 40vw;
+    font-size: 4vw;
+    border-radius: 2vw;
+    margin: 10px 0px;
+    padding: 0 2.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(175, 45, 45);
+    overflow: hidden;
+}
+
+.fist-content img {
+    height: 19vw;
+    width: 29vw;
+    object-fit: cover;
+    border-radius: 2vw;
+}
+
+.shake1 {
+    animation: shake1 0.6s 2;
+}
+
+@keyframes shake1 {
+    0% {
+        transform:
+            translateY(0) rotate(0deg);
+    }
+
+    25% {
+        transform:
+            translateY(-10px) rotate(-10deg);
+    }
+
+    50% {
+        transform:
+            translateY(10px) rotate(10deg);
+    }
+
+    75% {
+        transform:
+            translateY(-10px) rotate(-10deg);
+    }
+
+    100% {
+        transform:
+            translateY(0) rotate(0deg);
+    }
+}
+
+
+.shake2 {
+    animation: shake2 0.6s 2;
+}
+
+@keyframes shake2 {
+    0% {
+        transform:
+            translateY(0) rotate(0deg);
+    }
+
+    25% {
+        transform:
+            translateY(-10px) rotate(10deg);
+    }
+
+    50% {
+        transform:
+            translateY(10px) rotate(-10deg);
+    }
+
+    75% {
+        transform:
+            translateY(-10px) rotate(10deg);
+    }
+
+    100% {
+        transform:
+            translateY(0) rotate(0deg);
+    }
+}
+
+
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.choice {
+    height: 30vw;
+    width: 24vw;
+    border-radius: 2vw;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.choice:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.choice:active {
+    opacity: 0.5;
+}
+
+.choices img {
+    height: 29vw;
+    width: 23vw;
+    object-fit: cover;
+    border-radius: 2vw;
+}
+
+.score_board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.score {
+    margin: 0 20px 0 20px;
+}
+
+#user_score,
+#computer_score {
+    font-size: 50px;
+}
+
+.msg-container {
+    margin: 10px auto 20px auto;
+}
+
+#msg {
+    background-color: green;
+    font-size: 25px;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#reset {
+    height: 30px;
+    width: 80px;
+    font-size: larger;
+    background-color: rgba(228, 12, 12, 0.718);
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+@media only screen and (min-width : 600px) {
+    #fist {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        background-color: rgb(0, 0, 0);
+        margin: 20px auto;
+        width: 70vh;
+        overflow: hidden;
+    }
+
+    .fist-content {
+        height: 16vh;
+        width: 40vh;
+        border-radius: 2vh;
+        margin: 10px 0px;
+        font-size: 3vh;
+        padding: 0 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(175, 45, 45);
+        overflow: hidden;
+    }
+
+    .fist-content img {
+        height: 15vh;
+        width: 20vh;
+        object-fit: cover;
+        border-radius: 2vh;
+    }
+
+    .choices {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .choice {
+        height: 21vh;
+        width: 16vh;
+        border-radius: 3vh;
+        margin: 10px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+
+    }
+
+    .choices img {
+        height: 20vh;
+        width: 15vh;
+        border-radius: 3vh;
+        object-fit: cover;
+    }
+}
