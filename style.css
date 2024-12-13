@@ -48,6 +48,7 @@ p {
     justify-content: center;
     align-items: center;
     background-color: rgb(175, 45, 45);
+    color: white;
     overflow: hidden;
 }
 
@@ -218,6 +219,7 @@ p {
         justify-content: center;
         align-items: center;
         background-color: rgb(175, 45, 45);
+        color: white;
         overflow: hidden;
     }
 
